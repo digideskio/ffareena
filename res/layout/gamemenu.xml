@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <Button
+                    android:id="@+id/game_menu_fight_button"
+                    android:text="Send your troops to fight!"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    />
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+                <Button
+                        android:id="@+id/game_menu_manage_fighters_button"
+                        android:text="Manage fighters"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="1dp"
+                        />
+                <Button
+                        android:id="@+id/game_menu_manage_buildings_button"
+                        android:text="Manage buildings"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="1dp"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+                <Button
+                        android:id="@+id/game_menu_visit_blacksmith_button"
+                        android:text="Visit blacksmith"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="1dp"
+                        />
+                <Button
+                        android:id="@+id/game_menu_visit_mage_button"
+                        android:text="Visit mage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="1dp"
+                        />
+            </LinearLayout>
+            <Button
+                    android:id="@+id/game_menu_end_turn_button"
+                    android:text="End turn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    />
+        </LinearLayout>
+
+        <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/fightersideinfo"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
